@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+    <html lang="en"> 
+    <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registration Form</title> 
+    <style> 
+        .container { 
+            display: flex; 
+            width: 100%; 
+        } 
+        .left-side { 
+            flex: 1; 
+            padding: 20px; 
+        } 
+        .right-side { 
+            flex: 1; 
+            padding: 20px; 
+        } 
+         
+        .right-side h1 
+        { 
+            text-align: center; 
+        } 
+        label{ 
+            font-size: x-large; 
+            font-weight: 600; 
+            margin: 5px; 
+        } 
+        input{ 
+            width: 80%; 
+            height: 30px; 
+            margin: 5px; 
+        } 
+        input[type="date"] { 
+            width: 30%; 
+        } 
+        input[type="radio"] {    
+            width: 20px;   
+            height: 20px 
+        }   
+        button{ 
+            width: 20%; 
+            height: 30px; 
+            margin: 5px; 
+            font-size: large; 
+            text-align: center; 
+            background-color: hsl(241, 52%, 42%); 
+            color: aliceblue; 
+        } 
+ 
+        button:hover{ 
+          background-color: brown; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container">
+        <div class="left-side"> 
+            <img src="https://thevedamschool.in/wp-content/uploads/2023/01/SASI-LOGO-960x188-1-1.png" alt="SASI logo" /> 
+            <h1>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</h1> 
+            <h2>VISION</h2> 
+            <p>To escalate the department by creativeness in technology for emerging and 
+global needs through Training, Research & Development.</p> 
+            <h2>MISSION</h2> 
+            <p>To impart training to students in emerging technologies to product 
+development</p> 
+            <ol> 
+                <li>To promote research & innovation skills through professional 
+guidance</li> 
+                <li>To originate social technocrats who perceive societal problems as 
+being solvable by applying technology.</li> 
+                <li>To produce professionals with strong values and zeal to serve 
+society.</li> 
+                <li>To create leaders with strong communication skills who can drive, 
+inspire, and guide the groups they work with.</li> 
+            </ol> 
+        </div> 
+        <div class="right-side"> 
+            <h1>Registration Form</h1> 
+            <form method="post"> 
+                <label for="name">Full Name</label><br> 
+                <input type="text" id="name" name="name" placeholder="Enter your full 
+name" required><br> 
+                <label for="email">Email Address</label><br> 
+                <input type="email" id="email" name="email" placeholder="Enter your email" 
+required><br> 
+                <label for="phone">Phone Number</label><br> 
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone 
+number" maxlength="10"  required><br> 
+                <label for="dob">Date of Birth:</label><br> 
+                <input type="date" id="dob" name="dob" required><br> 
+                 <label for="gender">Gender</label><br> 
+                <input type="radio" id="male" name="gender" value="Male" > 
+                <label for="male">Male</label><br> 
+                <input type="radio" id="female" name="gender" value="Female" > 
+                <label for="female">Female</label><br> 
+                <label for="username">Username</label><br> 
+                <input type="text" id="username" name="username" placeholder="Enter 
+username" required><br> 
+                <label for="password">Password</label><br> 
+                <input type="password" id="password" name="password" placeholder="Enter 
+password" required><br> 
+                <label for="confirmpassword">Confirm Password</label><br> 
+                <input type="password" id="confirmpassword" name="confirmpassword" 
+placeholder="Confirm password" required><br> 
+                <button type="submit" value="submit" >Register</button>  
+                
+            </form> 
+     </div> 
+    </div> 
+</body> 
+</html>
